@@ -1,0 +1,16 @@
+div.style-container {
+    max-width: 800px;
+}
+
+div.header-img {
+    background-image: url("/public/img/gradient.png");
+}
+
+div > p.about-p {
+    font-style: italic;
+    font-size: smaller;
+}
+
+a.ascent-link {
+    color: #3C5C79;
+}

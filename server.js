@@ -19,11 +19,6 @@ app.use(cors({
     credentials: true,
 }));
 
-// var xhr = new XMLHttpRequest();
-// xhr.open('GET', 'http://abc.com/', true);
-// xhr.withCredentials = true;
-// xhr.send(null);
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
