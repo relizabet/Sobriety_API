@@ -1,0 +1,29 @@
+{
+  "name": "sobriety_api",
+  "version": "1.0.0",
+  "description": "An API to generate curated sobriety quotes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/relizabet/Sobriety_API.git"
+  },
+  "author": "Rachel E Campbell <rachel@relizabet.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/relizabet/Sobriety_API/issues"
+  },
+  "homepage": "https://github.com/relizabet/Sobriety_API#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0"
+  }
+}
