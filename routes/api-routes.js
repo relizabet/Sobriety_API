@@ -19,19 +19,19 @@ router.get("/random", (req, res) => {
 });
 
 // post quote for review
-// router.post("/add-quote", (req, res) => {
-//     db.Submit.create({
-//         quote: req.body.quote,
-//         author: req.body.author,
-//         source: req.body.source,
-//         category: req.body.category
-//     })
-//       .then(dbSubmit => {
-//           res.json(dbSubmit);
-//       })
-//         .catch(err => {
-//           res.status(403).json(err);
-//         });
-// });
+router.post("/add-quote", (req, res) => {
+    db.Submit.create({
+        quote: req.body.quote,
+        author: req.body.author,
+        source: req.body.source,
+        category: req.body.category
+    })
+      .then(dbSubmit => {
+          res.json(dbSubmit);
+      })
+        .catch(err => {
+          res.status(403).json(err);
+        });
+});
 
 module.exports = router;
