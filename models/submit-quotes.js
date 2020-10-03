@@ -8,7 +8,7 @@ module.exports = function (sequelize, DataTypes) {
       },
 
       email: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.TEXT,
         primaryKey: true,
         allowNull: true,
       },
