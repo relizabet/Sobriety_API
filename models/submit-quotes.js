@@ -9,7 +9,6 @@ module.exports = function (sequelize, DataTypes) {
 
       email: {
         type: DataTypes.TEXT,
-        primaryKey: true,
         allowNull: true,
       },
   
