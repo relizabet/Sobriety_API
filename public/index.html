@@ -8,23 +8,23 @@
     <title>Sobriety Quotes API</title>
 </head>
 <body>
-    <div class="container style-container">
-        <div class="mt-4 row align-items-end">
+    <div class="container style-container justify-content-center">
+        <div class="row mt-4 align-items-end">
             <div class="col-sm header-img">
                 <h1>Sobriety Quotes API</h1>
             </div>
             <div class="col-sm pb-1 text-right">
                 <h5>An API for Sobriety Quotes</h5>
             </div>
+            <div class="text-center mt-5">
+                <p class="about-p">The sobriety quotes API was inspired by and created for the <a class="ascent-link" href="https://github.com/keiththarp/dry-coders">Ascent</a> application when it became apparent that there was a lack of quote API's that were appropriate for and tailored to people that are sober and in recovery.</p>
+            </div>
         </div>
-        <div class="text-center mt-5">
-            <p class="about-p">The sobriety quotes API was inspired by and created for the <a class="ascent-link" href="https://github.com/keiththarp/dry-coders">Ascent</a> application when it became apparent that there was a lack of quote API's that were appropriate and tailored to people that are sober and in recovery.</p>
-        </div>
-        <div class="text-justify mt-5 container">
-            <h3>Allowed HTTPs requests:</h3>
-            <div class="container">
-                <h4><span>GET</span>: To get quotes</h4>
-                <div class="container">
+        <div class="row justify-content-center style-container-2">
+            <div class="mt-5">
+                <div class="new">
+                    <h3>Allowed HTTPs requests:</h3>
+                    <h4><span>GET</span>: To get quotes</h4>
                     <h5>Get one single random quote:</h5>
                     <ul>
                         <li>https://desolate-caverns-92812.herokuapp.com/api/random</li>
@@ -33,40 +33,35 @@
                     <ul>
                         <li>https://desolate-caverns-92812.herokuapp.com/api/quotes</li>
                     </ul>
-                </div>
-            </div>
-            <div class="container">
-                <h4><span>POST</span>: To submit quotes</h4>
-                <div class="container">
+                    <h4><span>POST</span>: To submit quotes</h4>
                     <h5>Get one single random quote:</h5>
                     <ul>
                         <li>https://desolate-caverns-92812.herokuapp.com/api/add-quote</li>
                     </ul>
                 </div>
+                <div class="new">
+                    <h3>Server Responses</h3>
+                    <ul>
+                        <li>200 <span>OK</span> - request successful</li>
+                        <li>201 <span>CREATED</span> - quote successfully submitted</li>
+                        <li>400 <span>BAD REQUEST</span> - request could not be completed</li>
+                    </ul>          
+                </div>
+            <div class="new">
+                <h3>Example Call:</h3>
+                <img alt="example of ajax call" class="example" src="./img/example1.png" />
             </div>
-        </div>
-        <div class="container">
-            <h3>Server Responses</h3>
-            <div class="container">
+            <div class="new">
+
+                <h3>Built With:</h3>
                 <ul>
-                    <li>200 <span>OK</span> - request successful</li>
-                    <li>201 <span>CREATED</span> - quote successfully submitted</li>
-                    <li>400 <span>BAD REQUEST</span> - request could not be completed</li>
+                    <li>Node.js</li>
+                    <li>express</li>
+                    <li>cors</li>
+                    <li>sequelize</li>
                 </ul>
             </div>
-        </div>
-        <div class="container">
-            <h3>Example Call:</h3>
-            <img class="example" src="./img/example1.png" />
-        </div>
-        <div class="container">
-            <h3>Built With:</h3>
-            <ul>
-                <li>Node.js</li>
-                <li>express</li>
-                <li>cors</li>
-                <li>sequelize</li>
-            </ul>
+            </div>
         </div>
     </div>
 </body>
