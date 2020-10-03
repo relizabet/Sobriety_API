@@ -8,9 +8,6 @@ router.get("/quotes", (req, res) => {
       .then(dbQuotes => {
           res.json(dbQuotes);
       })
-      .catch(err => {
-        res.status(400).json(err);
-    })
 });
 
 // get single random quote
@@ -20,9 +17,6 @@ router.get("/random", (req, res) => {
             res.json(dbQuotes);
             res.status(200);
     })
-      .catch(err => {
-          res.status(400).json(err);
-      })
 });
 
 // post quote for review
