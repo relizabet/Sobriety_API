@@ -1,6 +1,6 @@
-div.style-container {
+/* div.style-container {
     max-width: 800px;
-}
+} */
 
 div.header-img {
     background-image: url("/public/img/gradient.png");
@@ -13,4 +13,12 @@ div > p.about-p {
 
 a.ascent-link {
     color: #3C5C79;
+}
+
+img.example {
+    max-width: 600px;
+}
+
+div.container {
+    padding-bottom: 2em !important;
 }
