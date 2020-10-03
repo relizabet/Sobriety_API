@@ -28,7 +28,6 @@ router.get("/random", (req, res) => {
 // post quote for review
 router.post("/add-quote", (req, res) => {
     db.Submit.create({
-        email: req.body.email,
         quote: req.body.quote,
         author: req.body.author,
         source: req.body.source,
