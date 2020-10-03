@@ -6,6 +6,12 @@ module.exports = function (sequelize, DataTypes) {
         allowNull: false,
         autoIncrement: true
       },
+
+      email: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        allowNull: true,
+      },
   
       quote: {
         type: DataTypes.TEXT,

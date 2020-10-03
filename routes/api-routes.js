@@ -8,6 +8,9 @@ router.get("/quotes", (req, res) => {
       .then(dbQuotes => {
           res.json(dbQuotes);
       })
+      .catch(err => {
+        res.status(400).json(err);
+    })
 });
 
 // get single random quote
@@ -15,7 +18,11 @@ router.get("/random", (req, res) => {
     db.Quotes.findOne({ order: Sequelize.literal("rand()"), limit: 1 })
         .then(dbQuotes => {
             res.json(dbQuotes);
+            res.status(200);
     })
+      .catch(err => {
+          res.status(400).json(err);
+      })
 });
 
 // post quote for review
@@ -28,9 +35,10 @@ router.post("/add-quote", (req, res) => {
     })
       .then(dbSubmit => {
           res.json(dbSubmit);
+          res.status(201);
       })
         .catch(err => {
-          res.status(403).json(err);
+          res.status(400).json(err);
         });
 });
 
